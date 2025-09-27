@@ -1,0 +1,38 @@
+return {
+  "catppuccin/nvim",
+  name = "catppuccin",
+  lazy = false,
+  ---@type CatppuccinOptions
+  ---@diagnostic disable: missing-fields
+  config = function() vim.cmd.colorscheme "catppuccin" end,
+  opts = {
+    auto_integrations = true,
+    integrations = {
+      colorful_winsep = { color = "lavender" },
+      snacks = {
+        indent_scope_color = "lavender",
+      },
+    },
+  },
+  specs = {
+    {
+      "akinsho/bufferline.nvim",
+      optional = true,
+      opts = function(_, opts)
+        return require("astrocore").extend_tbl(opts, {
+          highlights = require("catppuccin.special.bufferline").get_theme(),
+        })
+      end,
+    },
+    {
+      "nvim-telescope/telescope.nvim",
+      optional = true,
+      opts = {
+        highlight = {
+          enable = true,
+          additional_vim_regex_highlighting = false,
+        },
+      },
+    },
+  },
+}
