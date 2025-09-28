@@ -12,7 +12,15 @@ return {
   -- theme
   { import = "astrocommunity.colorscheme.catppuccin" },
 
+  -- preview
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+
+  -- utils
+  { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.editing-support.auto-save-nvim" },
+
   -- lang
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.markdown" },
 }
