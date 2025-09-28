@@ -1,10 +1,10 @@
 return {
   "catppuccin/nvim",
   name = "catppuccin",
-  lazy = false,
+  lazy = true,
   ---@type CatppuccinOptions
   ---@diagnostic disable: missing-fields
-  config = function() vim.cmd.colorscheme "catppuccin" end,
+  -- config = function() vim.cmd.colorscheme "catppuccin" end,
   opts = {
     auto_integrations = true,
     integrations = {

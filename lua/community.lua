@@ -11,6 +11,7 @@ return {
   -- import/override with your plugins folder
   -- theme
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.vscode-nvim"},
 
   -- preview
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
