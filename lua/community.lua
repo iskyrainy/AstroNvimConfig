@@ -19,6 +19,7 @@ return {
   -- utils
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.editing-support.auto-save-nvim" },
+  { import = "astrocommunity.motion.nvim-surround" },
 
   -- lang
   { import = "astrocommunity.pack.rust" },
