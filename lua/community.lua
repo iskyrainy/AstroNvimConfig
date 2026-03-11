@@ -17,6 +17,7 @@ return {
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 
   -- utils
+  { import = "astrocommunity.editing-support.vim-visual-multi"},
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.editing-support.auto-save-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
