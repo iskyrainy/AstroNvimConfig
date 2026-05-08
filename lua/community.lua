@@ -29,7 +29,4 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.go" },
-
-  -- ai
-  { import = "astrocommunity.ai.opencode-nvim" },
 }
