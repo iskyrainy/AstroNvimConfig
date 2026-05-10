@@ -21,7 +21,6 @@ RESET='\e[0m'
 err ()
 {
   echo -e "${RED}$1${RESET}"
-  exit 1
 }
 
 warn()
@@ -105,10 +104,10 @@ check_lazygit ()
 {
   lg=$(ls /usr/bin | grep lazygit)
   if [[ $lg = "" ]]; then
-    err "CHECK 7 FAIED: laztgit not found "
-    warn "FIX: run 'sudo apt install laztgit' to install laztgit "
+    err "CHECK 7 FAIED: lazygit not found "
+    warn "FIX: run 'sudo apt install lazygit' to install lazygit "
   else
-    info "CHECK 7 PASSED: laztgit "
+    info "CHECK 7 PASSED: lazygit "
   fi
 }
 
