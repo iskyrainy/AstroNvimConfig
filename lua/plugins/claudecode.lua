@@ -7,20 +7,20 @@ return {
       { "<leader>a", nil, desc = "AI/Claude Code" },
       { "<leader>ac",
         function()
-          local model = os.getenv("CLAUDE_MODEL")
+          local model = os.getenv("ANTHROPIC_MODEL")
           vim.cmd("ClaudeCode --model " .. model)
         end,
         desc = "Toggle Claude" },
       { "<leader>af", "<cmd>ClaudeCodeFocus<cr>", desc = "Focus Claude" },
       { "<leader>ar",
         function()
-          local model = os.getenv("CLAUDE_MODEL")
+          local model = os.getenv("ANTHROPIC_MODEL")
           vim.cmd("ClaudeCode --model " .. model .. " --resume")
         end,
         desc = "Resume Claude" },
       { "<leader>aC",
         function()
-          local model = os.getenv("CLAUDE_MODEL")
+          local model = os.getenv("ANTHROPIC_MODEL")
           vim.cmd("ClaudeCode --model " .. model .. " --continue")
         end,
         desc = "Continue Claude" },
