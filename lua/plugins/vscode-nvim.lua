@@ -1,6 +1,6 @@
 return { 
   "Mofiqul/vscode.nvim", 
-  lazy = false, 
+  lazy = true, 
   config = function ()
     local c = require('vscode.colors').get_colors()
     require('vscode').setup({
@@ -37,6 +37,6 @@ return {
             Cursor = { fg=c.vscDarkBlue, bg=c.vscLightGreen, bold=true },
         }
     })
-    vim.cmd.colorscheme "vscode"
+    -- vim.cmd.colorscheme "vscode"
   end 
 }
